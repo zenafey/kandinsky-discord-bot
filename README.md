@@ -1,5 +1,5 @@
 # Kandinsky discord bot
-Here is tutorial and code of Kandinsky discord bot, check my [discord server](https://discord.gg/qX5dwV3HEp) with my AI image creator!
+Here is tutorial and code of Kandinsky discord bot, check my [discord server](https://discord.gg/qX5dwV3HEp) with my AI image creator bot!
 #
 
 
