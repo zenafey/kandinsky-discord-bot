@@ -33,10 +33,10 @@ pip install -r requirements.txt
 pip install -U git+https://github.com/Pycord-Development/pycord
 ```
 
-5.After all of this actions we need to get our api tokens:
+5.After all of this actions we need to get our api tokens:\n
 1)First token that we need is Replicate api token, to get it enter [Replicate](https://replicate.com/) website, Login or Register if you not, then go to your profile page and copy token, save it somewhere
 
-2)Second token is a discord bot token, to get it enter [Discord Application page](https://discord.com/developers/applications), create new application or use another that is exist, enter bot category and copy it token, if bot isnt create - create, save your bot token somewhere
+2)Second token is a discord bot token, to get it enter [Discord Application page](https://discord.com/developers/applications), create new application or use another that is exist, enter bot category and copy its token, if bot isnt created - create, save your bot token somewhere
 IMPORTANT!!! All intents on discord bot page should be enabled
 
 6. Create new file in directory `kandinsky-discord-bot` with name `.env`, content of this file should be:
