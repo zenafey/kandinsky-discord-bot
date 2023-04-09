@@ -17,7 +17,6 @@ bot = commands.Bot(command_prefix=">", intents=discord.Intents.all())
 #event that will print message when bot will be ready
 @bot.event
 async def on_ready():
-    await bot.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name='>help'))
     print("-----------------------------------")
     print(f"{Fore.GREEN}       loggined as {bot.user.display_name}       {Fore.RESET}")
     print("-----------------------------------")
