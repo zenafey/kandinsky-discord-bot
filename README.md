@@ -1,75 +1,67 @@
+# Kandinsky discord bot
+Here is tutorial and code of Kandinsky discord bot, check my [discord server](https://discord.gg/qX5dwV3HEp) with my AI image creator!
+#
+
+
+# Installation
+
+1. First we need to check that Python is installed and have 3.11 version(its important)
 ```
-# Stable Diffusion Discord Bot
-
-Stable Diffusion is a multi-purpose Discord bot designed to make your server more useful and enjoyable. It offers a range of features, including:
-
-- Moderation commands to manage the server
-- Fun commands to entertain users
-- Utility commands to get information about the server or users
-- And more!
-
-Whether you're a small private Discord community or a large public server, Stable Diffusion can help you create a better environment for your users.
+python -V
 ```
+if running this command in command line giver error like "python is not recognized bla bla bla" or it have not 3.11 version we need to install 3.11 version from [official website](https://www.python.org/downloads/release/python-3110/)
 
-## Installation and Usage
-
-In this section, provide instructions on how to install and use your bot. This should include any prerequisites, such as Python or the `discord.py` library, and any specific steps required to get the bot up and running. For example:
-
+Right result should be:
 ```
-## Installation
-
-To run Stable Diffusion, you need the following:
-
-- Python 3.7 or higher
-- `pip` package manager
-- `discord.py` library
-
-You can install the `discord.py` library by running the following command:
-
-```
-pip install discord.py
+python -V
+Python 3.11.0
 ```
 
-To start the bot, create a new application on the [Discord Developer Portal](https://discord.com/developers/applications) and add a bot to it. Then, copy the bot token and add it to a new environment variable named `DISCORD_TOKEN`. Finally, run the following command to start the bot:
-
+2. Now lets clone repository with bot by command below, if git isnt installed, install [it](https://git-scm.com/downloads)
 ```
-python bot.py
-```
-
-## Usage
-
-Stable Diffusion responds to various commands that start with a prefix (`?` by default). Here are some examples:
-
-- `?help`: Get a list of commands and their usage instructions
-- `?ping`: Check the bot's response time
-- `?kick @user`: Kick a user from the server
-- `?roll 2d6`: Roll two six-sided dice
+git clone https://github.com/yoou3-cyber/kandinsky-discord-bot
+cd kandinsky-discord-bot
 ```
 
-## Contributing
-
-In this section, explain how users can contribute to your bot's development or report any issues they encounter. Be sure to include instructions on how to submit pull requests or bug reports. For example:
-
+3. To install needed modules lets run this command:
 ```
-## Contributing
-
-Stable Diffusion is an open-source project, and we welcome contributions! To contribute, follow these steps:
-
-1. Fork the repository
-2. Create a new branch for your changes
-3. Make your changes and commit them
-4. Push your changes to your forked repository
-5. Submit a pull request
-
-If you encounter any issues or have ideas for new features, please submit a new [issue](https://github.com/myusername/Stable-Diffusion-Discord-Bot/issues) on our GitHub repository.
+pip install -r requirements.txt
 ```
 
-## License
-
-Finally, include any license information for your bot or its source code. If you're using an open-source license, be sure to include the full text of the license in a separate file. For example:
-
+4. IMPORTANT!! If you used libraries such as nextcord, disnake, discord, discord.py, DiscordUtils, etc... before, you need to uinstall them after uninstallation of them or if you didnt used them, you should run command to install py-cord:
 ```
-## License
-
-Stable Diffusion is licensed under the [MIT License](LICENSE).
+pip install -U git+https://github.com/Pycord-Development/pycord
 ```
+
+5.After all of this actions we need to get our api tokens:
+1)First token that we need is Replicate api token, to get it enter [Replicate](https://replicate.com/) website, Login or Register if you not, then go to your profile page and copy token, save it somewhere
+
+2)Second token is a discord bot token, to get it enter [Discord Application page](https://discord.com/developers/applications), create new application or use another that is exist, enter bot category and copy it token, if bot isnt create - create, save your bot token somewhere
+IMPORTANT!!! All intents on discord bot page should be enabled
+
+6. Create new file in directory `kandinsky-discord-bot` with name `.env`, content of this file should be:
+```
+REPLICATE_API_TOKEN=<paste your replicate token here instead of this text and ><>
+DISCORD_TOKEN=<paste here your discord bot token instead of this text and ><>
+```
+
+7. Run bot by command:
+```
+python kandinsky.py
+```
+wait some minutes after this to sync commands
+
+8. Enjoy bot!!!!
+
+# How to use this command of bot?
+![image](https://user-images.githubusercontent.com/118455214/230778796-69a0ff38-e5fe-48e0-ab60-4f86db83ad6b.png)
+
+This bot will have slash command /kandinsky that have options:
+`prompt`(required) - text of what should be on picture
+`steps` - number of steps in 1-500
+`scale` - scale varioable is float and can be from 1 to 20
+Generation time depends on steps and scale value
+
+# Contact
+Discord tag: xeon-m#7477
+Discord server: https://discord.gg/qX5dwV3HEp 
