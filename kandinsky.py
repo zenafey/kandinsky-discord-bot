@@ -6,6 +6,7 @@ from discord import option
 from discord.ext import commands
 import replicate
 from dotenv import load_dotenv
+import os
 from colorama import init, Fore, Back, Style
 import json
 #load variables with replicate and discord api token
