@@ -1,5 +1,5 @@
 # Kandinsky discord bot
-Here is tutorial and code of Kandinsky discord bot, check my [discord server](https://discord.gg/qX5dwV3HEp) with my AI image creator bot!
+Here is tutorial and code of Kandinsky discord bot
 #
 
 
@@ -30,36 +30,34 @@ pip install -r requirements.txt
 
 4. IMPORTANT!! If you used libraries such as nextcord, disnake, discord, discord.py, DiscordUtils, etc... before, you need to uinstall them after uninstallation of them or if you didnt used them, you should run command to install py-cord:
 ```
-pip install -U git+https://github.com/Pycord-Development/pycord
+pip install py-cord
 ```
 
-5.After all of this actions we need to get our api tokens:
+5.After all of this actions we need to get discord api bot token:
 
-1)First token that we need is Replicate api token, to get it enter [Replicate](https://replicate.com/) website, Login or Register if you not, then go to your profile page and copy token, save it somewhere
-
-2)Second token is a discord bot token, to get it enter [Discord Application page](https://discord.com/developers/applications), create new application or use another that is exist, enter bot category and copy its token, if bot isnt created - create, save your bot token somewhere
+to get it enter [Discord Application page](https://discord.com/developers/applications), create new application or use another that is exist, enter bot category and copy its token, if bot isnt created - create, save your bot token somewhere
 IMPORTANT!!! All intents on discord bot page should be enabled
 
 6. Create new file in directory `kandinsky-discord-bot` with name `.env`, content of this file should be:
 ```
-REPLICATE_API_TOKEN=<paste your replicate token here instead of this text and ><>
 DISCORD_TOKEN=<paste here your discord bot token instead of this text and ><>
 ```
 
 7. Run bot by command:
 ```
-python kandinsky.py
+python main.py
 ```
 wait some minutes after this to sync commands
 
 8. Enjoy bot!!!!
 
 # How to use this command of bot?
-![image](https://user-images.githubusercontent.com/118455214/230778796-69a0ff38-e5fe-48e0-ab60-4f86db83ad6b.png)
+![image](https://github.com/zenafey/kandinsky-discord-bot/assets/118455214/e3918a9a-e47f-4ae2-aab8-d37962718675)
 
-This bot will have slash command /kandinsky that have options:
+
+This bot will have slash command /create that have options:
 `prompt`(required) - text of what should be on picture
-`steps` - number of steps in 1-500
+`style` - one of 24 styles
 `scale` - scale varioable is float and can be from 1 to 20
 Generation time depends on steps and scale value
 
