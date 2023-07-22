@@ -1,4 +1,4 @@
-"""author`s discord - xeon-m#7477
+"""author`s discord - @zenafey
 
 import needed modules"""
 import discord
